@@ -2,8 +2,8 @@ pipeline {
     agent any 
 
     environment {
-        DOCKER_CREDENTIALS_ID = 'dayam7-dockerhub'
-        DOCKER_IMAGE = 'cithit/roseaw'                                                 // <------change this
+        DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'
+        DOCKER_IMAGE = 'cithit/dayam7'                                                 // <------change this
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/miamioh-dayam7/cit225-lab3-2.git'                   // <------change this
         KUBECONFIG = credentials('dayam7-225')                                             // <------change this
